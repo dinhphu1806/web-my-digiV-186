@@ -10,13 +10,13 @@
             color: $--color-black;
             font-size: 25px;
             font-weight: bold;
-            letter-spacing: 12px;
+            letter-spacing: 1.2px;
         }
     }
     .menu{
         display: flex;
         li{
-            padding: 10px 20px;
+            padding: 7px 15px;
             position: relative;
             }
             a{
@@ -25,7 +25,25 @@
                 display: block;
                 font-weight: bold;
                 text-transform: uppercase;
+                &:hover{
+                    color: blue;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    background-color: $--color-black;
+                    width: 0%;
+                    height: 2px;
+                }
+                &:hover::after{
+                   width: 100%;
+                   transition: all 0.3s linear;
+                }
             }
+           
+            
     }  
     .icon-bar{
         font-size: 22px;

@@ -57,5 +57,53 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
    
+    .banner{
+        .banner-container{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 50px;
+            margin-top: -80px;
+        }
+        .banner-left{
+            margin: 0 70px;
+            .static-txt{
+                font-size: 32px;
+            }
+            .dynamic-txt{
+                height: 85px;
+                line-height: 85px;
+                font-size: 36px;
+            }
+
+        }
+        .banner-right{
+            margin-top: 40px;
+            margin-right: 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
     
+}
+@media (max-width: 440px){
+    
+    .banner{
+        .banner-container{
+           
+        }
+        .banner-left{
+            padding: 0 100px;
+            .static-txt{
+                font-size: 26px;
+            }
+            
+            
+
+        }
+        .banner-right{
+           
+        }
+    }
 }

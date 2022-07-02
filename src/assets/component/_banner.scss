@@ -1,0 +1,77 @@
+.banner{
+    overflow: hidden;
+    .banner-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6a4ed7;
+        height: 100vh;
+        padding: 10px 50px;
+    }
+    .banner-left{
+        padding: 0 20px;
+        .static-txt{
+            color: #fff;
+            font-size: 60px;
+            line-height: 95px;
+            font-weight: 600;
+        }
+        .dynamic-txt {
+            // margin-left: 20px;
+            height: 92px;
+            line-height: 92px;
+            overflow: hidden;
+            li{
+                color: #6abdb3;
+                list-style: none;
+                font-size: 60px;
+                font-weight: 500;
+                position: relative;
+                top: 0;
+                animation: slide 8s steps(4) infinite;
+                background: #6a4ed7;
+                span{
+                    position: relative;
+                    &::after{
+                        content: "..";
+                        position: absolute;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        border-left: 2px solid #6abdb3;
+                        animation: typing 2s steps(12) infinite;
+                        background: #6a4ed7;
+                    }
+                    @keyframes typing {
+                        100% {
+                            left: 100%;
+                            margin: 0 -35px 0 35px;
+                          }
+                }
+                @keyframes slide {
+                    100% {
+                      top: -360px;
+                    }
+                  }
+                }
+           
+                }
+        }
+        .banner-left-content{
+            p{
+                font-size: 14px;
+                color: rgb(57, 52, 52);
+                vertical-align: baseline;
+                line-height: 20px;
+            }
+        }
+    }
+    .banner-right{
+        margin-right: -100px;
+        img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

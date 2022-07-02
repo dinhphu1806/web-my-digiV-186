@@ -11,13 +11,13 @@
   color: #000;
   font-size: 25px;
   font-weight: bold;
-  letter-spacing: 12px;
+  letter-spacing: 1.2px;
 }
 .header .menu {
   display: flex;
 }
 .header .menu li {
-  padding: 10px 20px;
+  padding: 7px 15px;
   position: relative;
 }
 .header .menu a {
@@ -27,10 +27,114 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+.header .menu a:hover {
+  color: blue;
+}
+.header .menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: #000;
+  width: 0%;
+  height: 2px;
+}
+.header .menu a:hover::after {
+  width: 100%;
+  transition: all 0.3s linear;
+}
 .header .icon-bar {
   font-size: 22px;
   color: #000;
   display: none;
+}
+
+.banner {
+  overflow: hidden;
+}
+.banner .banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6a4ed7;
+  height: 100vh;
+  padding: 10px 50px;
+}
+.banner .banner-left {
+  padding: 0 20px;
+}
+.banner .banner-left .static-txt {
+  color: #fff;
+  font-size: 60px;
+  line-height: 95px;
+  font-weight: 600;
+}
+.banner .banner-left .dynamic-txt {
+  height: 92px;
+  line-height: 92px;
+  overflow: hidden;
+}
+.banner .banner-left .dynamic-txt li {
+  color: #6abdb3;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  -webkit-animation: slide 8s steps(4) infinite;
+          animation: slide 8s steps(4) infinite;
+  background: #6a4ed7;
+}
+.banner .banner-left .dynamic-txt li span {
+  position: relative;
+}
+.banner .banner-left .dynamic-txt li span::after {
+  content: "..";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #6abdb3;
+  -webkit-animation: typing 2s steps(12) infinite;
+          animation: typing 2s steps(12) infinite;
+  background: #6a4ed7;
+}
+@-webkit-keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+@-webkit-keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.banner .banner-left .banner-left-content p {
+  font-size: 14px;
+  color: rgb(57, 52, 52);
+  vertical-align: baseline;
+  line-height: 20px;
+}
+.banner .banner-right {
+  margin-right: -100px;
+}
+.banner .banner-right img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
@@ -112,5 +216,39 @@ a {
   .navbar.active .menu {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .banner .banner-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-top: -80px;
+  }
+  .banner .banner-left {
+    margin: 0 70px;
+  }
+  .banner .banner-left .static-txt {
+    font-size: 32px;
+  }
+  .banner .banner-left .dynamic-txt {
+    height: 85px;
+    line-height: 85px;
+    font-size: 36px;
+  }
+  .banner .banner-right {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .banner .banner-right img {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .banner .banner-left {
+    padding: 0 100px;
+  }
+  .banner .banner-left .static-txt {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=index.css.map */
