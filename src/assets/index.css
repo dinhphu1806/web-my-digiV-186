@@ -1,0 +1,116 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header .logo a {
+  padding: 10px 20px;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 12px;
+}
+.header .menu {
+  display: flex;
+}
+.header .menu li {
+  padding: 10px 20px;
+  position: relative;
+}
+.header .menu a {
+  color: #000;
+  font-size: 16px;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header .icon-bar {
+  font-size: 22px;
+  color: #000;
+  display: none;
+}
+
+/* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
+    vd: 
+    button{
+          @include buttonStyle();
+          background-color: blue; // nếu muốn thay đổi màu nền
+    }
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 60px;
+  }
+
+  .menu li {
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .header {
+    padding: 20px 40px;
+  }
+  .header .logo a {
+    padding: 7px 15px;
+    font-size: 20px;
+  }
+  .header .icon-bar {
+    display: block;
+    z-index: 100;
+  }
+  .header .navbar .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.557);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    z-index: 99;
+  }
+  .header .navbar .menu li:first-child {
+    margin-top: 50px;
+  }
+  .header .navbar .menu li {
+    padding: 20px;
+  }
+  .header .navbar .menu li a {
+    color: #fff;
+  }
+
+  .navbar.active .menu {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}/*# sourceMappingURL=index.css.map */

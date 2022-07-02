@@ -1,0 +1,16 @@
+@mixin buttonStyle {
+    // css cho button
+    //....
+}  
+@mixin mainStyle {
+    // css cho main
+    // .....
+} 
+/* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
+    vd: 
+    button{
+          @include buttonStyle();
+          background-color: blue; // nếu muốn thay đổi màu nền
+    }
+
+*/

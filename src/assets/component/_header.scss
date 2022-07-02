@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .logo{
+        a{
+            padding: 10px 20px;
+            color: $--color-black;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 12px;
+        }
+    }
+    .menu{
+        display: flex;
+        li{
+            padding: 10px 20px;
+            position: relative;
+            }
+            a{
+                color: $--color-black;
+                font-size: 16px;
+                display: block;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+    }  
+    .icon-bar{
+        font-size: 22px;
+        color: $--color-black;
+        display: none;
+    }
+          
+}
+
+   
