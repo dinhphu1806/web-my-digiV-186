@@ -13,11 +13,12 @@
         overflow: hidden;
     }
     .header{
-        padding: 20px 40px;
+        padding: 10px 40px;
         .logo{
             a{
-                padding: 7px 15px;
-                font-size: 20px;
+               img{
+                width: 70px;
+               }
             }
         }
         .icon-bar{
@@ -59,51 +60,61 @@
    
     .banner{
         .banner-container{
-            justify-content: center;
-            align-items: center;
+            margin-top: 10px;
+            display: flex;
             flex-direction: column;
-            padding: 0 50px;
-            margin-top: -80px;
-        }
-        .banner-left{
-            margin: 0 70px;
-            .static-txt{
-                font-size: 32px;
+            padding: 40px;
+            .banner-text{
+                margin-bottom: 20px;
+                .banner-text{
+                    h3{
+                        font-size: 18px;
+                       
+                    }
+                    h1{
+                        font-size: 36px;
+                      
+                    }
+                    p{
+                        font-size: 12px;
+                       
+                    }
+                }
             }
-            .dynamic-txt{
-                height: 85px;
-                line-height: 85px;
-                font-size: 36px;
-            }
-
-        }
-        .banner-right{
-            margin-top: 40px;
-            margin-right: 0;
             img{
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
+       
     }
     
 }
 @media (max-width: 440px){
-    
     .banner{
         .banner-container{
-           
-        }
-        .banner-left{
-            padding: 0 100px;
-            .static-txt{
-                font-size: 26px;
+            padding: 20px;
+            .banner-text{
+                margin-top: 10px;
+                // margin-bottom: 20px;
+                .banner-text{
+                    h3{
+                        font-size: 16px;
+                       
+                    }
+                    h1{
+                        font-size: 26px;
+                      
+                    }
+                    p{
+                        font-size: 11px;
+                       
+                    }
+                }
             }
-            
-            
-
         }
-        .banner-right{
-           
-        }
+       
     }
+    
 }

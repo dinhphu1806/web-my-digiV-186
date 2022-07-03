@@ -3,15 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px 90px;
+  box-shadow: rgba(61, 64, 66, 0.2) 0px 8px 24px;
 }
-.header .logo a {
-  padding: 10px 20px;
-  color: #000;
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 1.2px;
+.header .logo a img {
+  width: 90px;
 }
 .header .menu {
   display: flex;
@@ -21,11 +17,11 @@
   position: relative;
 }
 .header .menu a {
-  color: #000;
+  color: rgba(255, 255, 255, 0.785);
   font-size: 16px;
   display: block;
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 18px;
 }
 .header .menu a:hover {
   color: blue;
@@ -53,88 +49,33 @@
   overflow: hidden;
 }
 .banner .banner-container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #6a4ed7;
-  height: 100vh;
-  padding: 10px 50px;
+  padding: 50px;
 }
-.banner .banner-left {
-  padding: 0 20px;
-}
-.banner .banner-left .static-txt {
+.banner .banner-container .banner-text h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  line-height: 22px;
   color: #fff;
-  font-size: 60px;
-  line-height: 95px;
+}
+.banner .banner-container .banner-text h1 {
+  font-size: 48px;
+  color: #fff;
   font-weight: 600;
 }
-.banner .banner-left .dynamic-txt {
-  height: 92px;
-  line-height: 92px;
-  overflow: hidden;
+.banner .banner-container .banner-text p {
+  font-size: 16px;
+  color: #F5F5F5;
 }
-.banner .banner-left .dynamic-txt li {
-  color: #6abdb3;
-  list-style: none;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  -webkit-animation: slide 8s steps(4) infinite;
-          animation: slide 8s steps(4) infinite;
-  background: #6a4ed7;
-}
-.banner .banner-left .dynamic-txt li span {
-  position: relative;
-}
-.banner .banner-left .dynamic-txt li span::after {
-  content: "..";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-left: 2px solid #6abdb3;
-  -webkit-animation: typing 2s steps(12) infinite;
-          animation: typing 2s steps(12) infinite;
-  background: #6a4ed7;
-}
-@-webkit-keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-}
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-}
-@-webkit-keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-.banner .banner-left .banner-left-content p {
-  font-size: 14px;
-  color: rgb(57, 52, 52);
-  vertical-align: baseline;
-  line-height: 20px;
-}
-.banner .banner-right {
-  margin-right: -100px;
-}
-.banner .banner-right img {
-  width: 80%;
+.banner .banner-container img {
+  width: 50%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 20px;
 }
 
 /* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
@@ -164,6 +105,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: linear-gradient(90deg, rgb(186, 35, 254) 0%, rgb(159, 47, 255) 18%, rgb(132, 56, 250) 100%);
+}
+
 @media (max-width: 1024px) {
   .header {
     padding: 20px 60px;
@@ -179,11 +124,10 @@ a {
   }
 
   .header {
-    padding: 20px 40px;
+    padding: 10px 40px;
   }
-  .header .logo a {
-    padding: 7px 15px;
-    font-size: 20px;
+  .header .logo a img {
+    width: 70px;
   }
   .header .icon-bar {
     display: block;
@@ -219,36 +163,44 @@ a {
   }
 
   .banner .banner-container {
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    display: flex;
     flex-direction: column;
-    padding: 0 50px;
-    margin-top: -80px;
+    padding: 40px;
   }
-  .banner .banner-left {
-    margin: 0 70px;
+  .banner .banner-container .banner-text {
+    margin-bottom: 20px;
   }
-  .banner .banner-left .static-txt {
-    font-size: 32px;
+  .banner .banner-container .banner-text .banner-text h3 {
+    font-size: 18px;
   }
-  .banner .banner-left .dynamic-txt {
-    height: 85px;
-    line-height: 85px;
+  .banner .banner-container .banner-text .banner-text h1 {
     font-size: 36px;
   }
-  .banner .banner-right {
-    margin-top: 40px;
-    margin-right: 0;
+  .banner .banner-container .banner-text .banner-text p {
+    font-size: 12px;
   }
-  .banner .banner-right img {
+  .banner .banner-container img {
     width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 440px) {
-  .banner .banner-left {
-    padding: 0 100px;
+  .banner .banner-container {
+    padding: 20px;
   }
-  .banner .banner-left .static-txt {
+  .banner .banner-container .banner-text {
+    margin-top: 10px;
+  }
+  .banner .banner-container .banner-text .banner-text h3 {
+    font-size: 16px;
+  }
+  .banner .banner-container .banner-text .banner-text h1 {
     font-size: 26px;
+  }
+  .banner .banner-container .banner-text .banner-text p {
+    font-size: 11px;
   }
 }/*# sourceMappingURL=index.css.map */

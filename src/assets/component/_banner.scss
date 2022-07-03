@@ -1,77 +1,37 @@
 .banner{
     overflow: hidden;
     .banner-container{
+        position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        background-color: #6a4ed7;
-        height: 100vh;
-        padding: 10px 50px;
-    }
-    .banner-left{
-        padding: 0 20px;
-        .static-txt{
-            color: #fff;
-            font-size: 60px;
-            line-height: 95px;
-            font-weight: 600;
-        }
-        .dynamic-txt {
-            // margin-left: 20px;
-            height: 92px;
-            line-height: 92px;
-            overflow: hidden;
-            li{
-                color: #6abdb3;
-                list-style: none;
-                font-size: 60px;
-                font-weight: 500;
-                position: relative;
-                top: 0;
-                animation: slide 8s steps(4) infinite;
-                background: #6a4ed7;
-                span{
-                    position: relative;
-                    &::after{
-                        content: "..";
-                        position: absolute;
-                        left: 0;
-                        height: 100%;
-                        width: 100%;
-                        border-left: 2px solid #6abdb3;
-                        animation: typing 2s steps(12) infinite;
-                        background: #6a4ed7;
-                    }
-                    @keyframes typing {
-                        100% {
-                            left: 100%;
-                            margin: 0 -35px 0 35px;
-                          }
-                }
-                @keyframes slide {
-                    100% {
-                      top: -360px;
-                    }
-                  }
-                }
-           
-                }
-        }
-        .banner-left-content{
+        padding: 50px;
+        .banner-text{
+            h3{
+                font-size: 22px;
+                margin-bottom: 10px;
+                line-height: 22px;
+                color: $--color-white;
+            }
+            h1{
+                font-size: 48px;
+                color: $--color-white;
+                font-weight: 600;
+            }
             p{
-                font-size: 14px;
-                color: rgb(57, 52, 52);
-                vertical-align: baseline;
-                line-height: 20px;
+                font-size: 16px;
+                color: $--color-p;
             }
         }
-    }
-    .banner-right{
-        margin-right: -100px;
         img{
-            width: 80%;
+            width: 50%;
             height: 100%;
             object-fit: cover;
+            padding: 20px;
         }
     }
+   
+       
+    
+    
 }
