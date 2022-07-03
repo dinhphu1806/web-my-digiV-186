@@ -90,6 +90,7 @@
 }
 .about .about-container .about-content {
   max-width: 500px;
+  padding: 0 30px;
 }
 .about .about-container .about-content h3 {
   font-weight: 600;
@@ -163,10 +164,6 @@ html {
   }
 }
 @media (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-
   .header {
     padding: 10px 40px;
   }
@@ -210,7 +207,7 @@ html {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
   }
   .banner .banner-container .banner-text {
     margin-bottom: 20px;
@@ -234,6 +231,17 @@ html {
   .about .about-container {
     display: flex;
     flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .about .about-container h3 {
+    font-size: 18px;
+  }
+  .about .about-container h1 {
+    font-size: 26px;
+    letter-spacing: 1.3;
+  }
+  .about .about-container .about-text p {
+    font-size: 14px;
   }
 }
 @media (max-width: 440px) {
@@ -251,5 +259,22 @@ html {
   }
   .banner .banner-container .banner-text .banner-text p {
     font-size: 11px;
+  }
+
+  .about .about-container {
+    padding: 20px;
+  }
+  .about .about-container .about-content {
+    padding: 0;
+  }
+  .about .about-container h3 {
+    font-size: 14px;
+  }
+  .about .about-container h1 {
+    font-size: 22px;
+    letter-spacing: 1.3;
+  }
+  .about .about-container .about-text p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=index.css.map */
