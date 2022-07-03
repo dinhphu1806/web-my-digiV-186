@@ -89,6 +89,13 @@
         }
        
     }
+
+    .about{
+        .about-container{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
     
 }
 @media (max-width: 440px){

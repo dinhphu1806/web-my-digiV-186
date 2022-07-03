@@ -1,0 +1,46 @@
+.about{
+    .about-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        .about-banner{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter:brightness(120%);
+            }
+        }
+        .about-content{
+            max-width: 500px;
+            h3{
+                font-weight: 600;
+                font-size: 22px;
+                letter-spacing: 1;
+                color: $--color-white-header;
+            }
+            h1{
+                font-size: 36px;
+                letter-spacing: 1.5;
+                color: $--color-white;
+                font-family: 'Open Sans', sans-serif;
+            }
+           .about-text{
+                margin: 20px 0;
+              
+                p{
+                    margin-bottom: 10px;
+                    letter-spacing: 1.2px;
+                    color: $--color-p;
+                }
+           }
+           a{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: $--bg-btn;
+            color: $--color-white;
+           }
+        }
+    }
+}
