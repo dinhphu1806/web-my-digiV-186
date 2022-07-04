@@ -2,54 +2,51 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 90px;
+    padding: 10px 90px;
     box-shadow: rgba(61, 64, 66, 0.2) 0px 8px 24px;
     .logo{
         a{
-            // padding: 10px 20px;
-            // color: $--color-white;
-            // font-size: 25px;
-            // font-weight: bold;
-            // letter-spacing: 1.2px;
-            // font-family: 'Montserrat', sans-serif;
             img{
                 width: 90px;
                 filter: contrast(200%);
             }
         }
     }
-    .menu{
-        display: flex;
-        li{
-            padding: 7px 15px;
-            position: relative;
+    .navbar{
+        // display: flex;
+        // justify-content: space-between;
+        .menu{
+            display: flex;
+            li{
+                padding: 7px 15px;
+                position: relative;
+                
+                a{
+                    color: $--color-black;
+                    font-size: 16px;
+                    display: block;
+                    font-weight: bold;
+                    font-size: 18px;
+                    &:hover{
+                        color: blue;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                        background-color: $--color-black;
+                        width: 0%;
+                        height: 2px;
+                    }
+                    &:hover::after{
+                       width: 100%;
+                       transition: all 0.3s linear;
+                    }
+                }  
             }
-            a{
-                color: $--color-white-header;
-                font-size: 16px;
-                display: block;
-                font-weight: bold;
-                font-size: 18px;
-                &:hover{
-                    color: blue;
-                }
-                &::after{
-                    content: '';
-                    position: absolute;
-                    bottom: 0px;
-                    left: 0;
-                    background-color: $--color-black;
-                    width: 0%;
-                    height: 2px;
-                }
-                &:hover::after{
-                   width: 100%;
-                   transition: all 0.3s linear;
-                }
-            }
-           
-            
-    }  
+        }  
+    }
     .icon-bar{
         font-size: 22px;
         color: $--color-black;
@@ -57,5 +54,3 @@
     }
           
 }
-
-   

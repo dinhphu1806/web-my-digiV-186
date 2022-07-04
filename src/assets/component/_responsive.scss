@@ -24,9 +24,8 @@
             
         }
         .navbar{ 
-            // z-index: 999;
             .menu{
-                position: absolute;
+                position: fixed;
                 top: 0; left: 0;
                 display: flex;
                 flex-direction: column;
@@ -35,6 +34,7 @@
                 align-items: center;
                 background-color: $--bg-menubar;
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: all 0.3s linear;
                 // transform: translateY(100%);
                 // opacity: 0;
                 z-index: 99;
@@ -60,21 +60,19 @@
             margin-top: 10px;
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            padding: 10px;
             .banner-text{
+                padding: 30px;
                 margin-bottom: 20px;
                 .banner-text{
                     h3{
-                        font-size: 18px;
-                       
+                        font-size: 18px;        
                     }
                     h1{
-                        font-size: 36px;
-                      
+                        font-size: 36px;     
                     }
                     p{
-                        font-size: 12px;
-                       
+                        font-size: 12px;           
                     }
                 }
             }
@@ -105,8 +103,20 @@
                 }
             }
         }
-    }
     
+    }
+
+    .services{
+        .services-container{
+            padding: 20px;
+            .services-list{
+                padding: 30px;
+                .item{
+                    padding: 20px;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 440px){
     .banner{
@@ -114,18 +124,17 @@
             padding: 20px;
             .banner-text{
                 margin-top: 10px;
-                // margin-bottom: 20px;
                 .banner-text{
                     h3{
-                        font-size: 16px;
+                        font-size: 14px;
                        
                     }
                     h1{
-                        font-size: 26px;
+                        font-size: 22px;
                       
                     }
                     p{
-                        font-size: 11px;
+                        font-size: 10px;
                        
                     }
                 }
@@ -153,6 +162,5 @@
             }
         }
     }
-    
     
 }
