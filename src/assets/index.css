@@ -321,18 +321,6 @@ body {
   .services .services-container .services-list .item {
     padding: 20px;
   }
-
-  .counter-up-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-  .counter-up-container .container {
-    height: 26vmin;
-    width: 26vmin;
-    font-size: 12px;
-    margin-bottom: 30px;
-  }
 }
 @media (max-width: 440px) {
   .banner .banner-container {
@@ -367,54 +355,4 @@ body {
   .about .about-container .about-text p {
     font-size: 12px;
   }
-}
-.counter-up-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0 50px;
-}
-.counter-up-container .container {
-  width: 28vmin;
-  height: 28vmin;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1em 0;
-  position: relative;
-  font-size: 16px;
-  border-radius: 0.5em;
-  background: linear-gradient(90deg, rgb(66, 175, 219) 18%, rgb(132, 56, 250) 100%);
-  border-bottom: 10px solid #48D1CC;
-  box-shadow: rgba(37, 39, 43, 0.2) 0px 8px 24px;
-}
-.counter-up-container .container i {
-  color: #48D1CC;
-  font-size: 2.5em;
-  text-align: center;
-}
-.counter-up-container .container span.num {
-  color: rgba(255, 255, 255, 0.662745098);
-  display: grid;
-  place-items: center;
-  font-weight: 600;
-  font-size: 3em;
-}
-.counter-up-container .container span.text {
-  color: #e0e0e0;
-  font-size: 14px;
-  text-align: center;
-  pad: 0.7em 0;
-  font-weight: 400;
-  line-height: 0;
-}
-.counter-up-container .container .icon-num {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.counter-up-container .container .icon-num p {
-  font-size: 36px;
-  color: rgba(255, 255, 255, 0.662745098);
-  margin-left: 5px;
 }/*# sourceMappingURL=index.css.map */

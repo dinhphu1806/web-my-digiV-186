@@ -121,6 +121,7 @@
     
     }
 
+
     .services{
         .services-container{
             padding: 20px;
@@ -133,18 +134,7 @@
         }
     }
 
-    .counter-up-container{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 20px;
-        .container {
-            // margin: 20px 20px;
-            height: 26vmin;
-            width: 26vmin;
-            font-size: 12px;
-            margin-bottom: 30px;
-          }
-    }
+    
 }
 @media (max-width: 440px){
     .banner{
@@ -193,3 +183,5 @@
     }
     
 }
+   
+    
