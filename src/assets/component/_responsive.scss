@@ -7,6 +7,10 @@
             padding: 8px 10px;  
         }
     }
+    .accordion-list{
+        max-width: 100%;
+        padding: 0 !important;
+    }    
     
 }
 @media (max-width: 768px) {
@@ -49,7 +53,10 @@
                         
                     }
                 }
-            }     
+            }   
+            .fa-times{
+                color: #fff !important;
+            }  
         }
     }
     .navbar.active .menu{
@@ -61,19 +68,19 @@
             margin-top: 10px;
             display: flex;
             flex-direction: column;
-            // padding: 20px;
+            padding: 20px;
             .banner-text{
                 // padding: 30px;
                 margin-bottom: 20px;
                 .banner-text{
                     h3{
-                        font-size: 18px;        
+                        font-size: 14px;        
                     }
                     h1{
-                        font-size: 36px;     
+                        font-size: 22px;     
                     }
                     p{
-                        font-size: 12px;           
+                        font-size: 10px;           
                     }
                 }
             }
@@ -113,7 +120,10 @@
     
     }
 
-
+    .accordion-list{
+        max-width: 100%;
+        padding: 0 !important;
+    }    
     .services{
         .services-container{
             padding: 20px;

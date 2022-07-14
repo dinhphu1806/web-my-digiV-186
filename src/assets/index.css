@@ -19,7 +19,8 @@ a {
 }
 
 body {
-  background: linear-gradient(90deg, rgb(186, 35, 254) 0%, rgb(159, 47, 255) 18%, rgb(132, 56, 250) 100%);
+  background: #00c6ff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .header {
@@ -27,7 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 90px;
-  box-shadow: rgba(61, 64, 66, 0.2) 0px 8px 24px;
+  box-shadow: rgba(85, 89, 91, 0.2) 0px 8px 24px;
 }
 .header .logo a img {
   width: 90px;
@@ -41,7 +42,7 @@ body {
   position: relative;
 }
 .header .navbar .menu li a {
-  color: #000;
+  color: #fff;
   font-size: 16px;
   display: block;
   font-weight: bold;
@@ -75,19 +76,18 @@ body {
   align-items: center;
   padding: 50px;
 }
-.banner .banner-container .banner-text {
-  padding: 50px;
-}
 .banner .banner-container .banner-text h3 {
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 10px;
   line-height: 22px;
-  color: #fff;
+  color: #F5F5F5;
 }
 .banner .banner-container .banner-text h1 {
-  font-size: 48px;
+  font-size: 32px;
+  text-transform: uppercase;
   color: #fff;
-  font-weight: 600;
+  font-weight: bold;
+  filter: brightness(200%);
 }
 .banner .banner-container .banner-text p {
   font-size: 16px;
@@ -202,6 +202,50 @@ body {
   filter: brightness(200%);
 }
 
+.accordion .accordion-list {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 20px 100px;
+}
+.accordion .accordion-list .accordion-title {
+  font-size: 36px;
+  margin: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+.accordion .accordion-list .accordion-content .accordion-item .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.484);
+  color: #f3f3f3;
+  cursor: pointer;
+}
+.accordion .accordion-list .accordion-content .accordion-item .accordion-header.active {
+  background-color: #1070b1;
+}
+.accordion .accordion-list .accordion-content .accordion-item .accordion-header.active i {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+.accordion .accordion-list .accordion-content .accordion-item .accordion-body {
+  padding: 0 1rem;
+  background-color: #f3f3f3;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.accordion .accordion-list .accordion-content .accordion-item .accordion-body.active {
+  max-height: 10rem;
+  padding: 1rem;
+}
+
 /* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
     vd: 
     button{
@@ -214,19 +258,12 @@ body {
   .header {
     padding: 20px 60px;
   }
-
   .menu li {
     padding: 8px 10px;
   }
-
-  .counter-up-container {
-    padding: 0 40px;
-  }
-  .counter-up-container .container {
-    margin: 0 20px;
-    height: 26vmin;
-    width: 26vmin;
-    font-size: 12px;
+  .accordion-list {
+    max-width: 100%;
+    padding: 0 !important;
   }
 }
 @media (max-width: 768px) {
@@ -264,35 +301,34 @@ body {
   .header .navbar .menu li a {
     color: #fff;
   }
-
+  .header .navbar .fa-times {
+    color: #fff !important;
+  }
   .navbar.active .menu {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-
   .banner .banner-container {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
   }
   .banner .banner-container .banner-text {
-    padding: 30px;
     margin-bottom: 20px;
   }
   .banner .banner-container .banner-text .banner-text h3 {
-    font-size: 18px;
+    font-size: 14px;
   }
   .banner .banner-container .banner-text .banner-text h1 {
-    font-size: 36px;
+    font-size: 22px;
   }
   .banner .banner-container .banner-text .banner-text p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .banner .banner-container img {
     width: 100%;
   }
-
   .about .about-container {
     display: flex;
     flex-direction: column-reverse;
@@ -311,7 +347,10 @@ body {
   .about .about-container .about-content .about-text p {
     font-size: 14px;
   }
-
+  .accordion-list {
+    max-width: 100%;
+    padding: 0 !important;
+  }
   .services .services-container {
     padding: 20px;
   }
@@ -323,9 +362,6 @@ body {
   }
 }
 @media (max-width: 440px) {
-  .banner .banner-container {
-    padding: 0px;
-  }
   .banner .banner-container .banner-text {
     margin-top: 10px;
   }
@@ -338,7 +374,6 @@ body {
   .banner .banner-container .banner-text .banner-text p {
     font-size: 10px;
   }
-
   .about .about-container {
     padding: 20px;
   }
