@@ -227,8 +227,27 @@
     .contact{
         .contact-container{
             display: flex;
-            flex-direction: column;
-            padding: 10px;
+            flex-direction: column-reverse;
+            padding: 20px 10px !important;
+            .map{
+                padding: 20px;
+            }
+            form{
+                 margin-bottom: 30px;
+                 .form-list{
+                    .input_field{
+                        input[type="text"]{
+                            width: 300px;
+                         }
+                        textarea{
+                            resize: none;
+                            height: 150px;
+                            border: 1px solid #e0e0e0;
+                            width: 100%;
+                            padding: 10px 20px;
+                          }
+                    }
+            }
                
             
         }
@@ -287,18 +306,27 @@
     }
     .contact{
         .contact-container{
-            padding: 0 10px !important;  
-            iframe {
-                padding: 10px !important;
-            } 
-            .form{
-                .form-list{
-                    padding: 10px;
-                }
+            padding: 20px 50px !important;
+            iframe{
+                // padding: 0 100px !important;
             }
+            form{
+                 margin-bottom: 30px;
+                 .form-list{
+                    .input_field{
+                        input[type="text"]{
+                            width: 300px;
+                        }
+                        textarea{
+                            resize: none;
+                            height: 150px;
+                            border: 1px solid #e0e0e0;
+                            width: 100%;
+                            padding: 10px 20px;
+                        }
+                    }
+                 } 
+             }
+         }
     }
-}
-    
-
-   
-
+} 

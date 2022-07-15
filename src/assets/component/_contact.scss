@@ -4,79 +4,61 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        // width: 1200px;
-        // margin: 0 auto;
-        // text-align: center;
-        // padding: 30px;
-    }
-    .form{
-          padding: 30px;	
-        .form-list{
-            
-            .form-control{
-                margin-bottom: 10px;
-                padding-bottom: 20px;
-                position: relative;
-                label{
-                    display: inline-block;
-                    margin-bottom: 5px;
+        padding: 20px 30px;
+        iframe{
+            border-radius: 8px;
+        }
+        form{
+            margin-left: 20px;
+            h1{
+                text-align: center;
+                font-size: 36px;
+                color: $--color-p;
+                margin: 10px 0;
+            }
+            .form-list{
+                .input_field{
+                    margin-bottom: 10px;
+                    input[type="text"]{
+                        padding: 10px 20px;
+                        width: 400px;
+                     }
+                    textarea{
+                        resize: none;
+                        height: 150px;
+                        border: 1px solid #e0e0e0;
+                        width: 100%;
+                        padding: 10px 20px;
+                      }
                 }
-                input{
-                    border: 2px solid #f0f0f0;
-                    border-radius: 4px;
-                    display: block;
-                    font-family: inherit;
-                    font-size: 14px;
-                    padding: 10px;
-                    width: 400px;
-                    &:focus{
-                        outline: 0;
-                        border-color: #777;
-                    }
-                }
-                i {
-                    visibility: hidden;
-                    position: absolute;
-                    top: 40px;
-                    right: 10px;
-                }
-                small {
-                    color: #e74c3c;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    visibility: hidden;
+                .btn{
+                    input[type="submit"]{
+                        border: 0px;
+                        margin-top: 10px;
+                        padding: 10px;
+                        text-align: center;
+                        width: 100%;
+                        // background: #fece0c;
+                        color: #332902;
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        font-weight: bold;
+                        border-radius: 10px;
+                        cursor: pointer;
+                      }
                 }
             }
-            button {
-                background-color: #8e44ad;
-                border: 2px solid #8e44ad;
-                border-radius: 4px;
-                color: #fff;
-                display: block;
-                font-family: inherit;
-                font-size: 16px;
-                padding: 10px;
-                margin-top: 20px;
-                width: 100%;
-            }  
-        }      
-        .form-control.success input {
-            border-color: #2ecc71;
+          
         }
-        .form-control.error input {
-            border-color: #e74c3c;
-        }
-        .form-control.success i.fa-check-circle {
-            color: #2ecc71;
-            visibility: visible;
-        }
-        .form-control.error i.fa-exclamation-circle {
-            color: #e74c3c;
-            visibility: visible;
-        }
-        .form-control.error small {
-            visibility: visible;
-        }
+        #error_message{
+            margin-bottom: 20px;
+            background: #fe8b8e;
+            padding: 0px;
+            text-align: center;
+            font-size: 14px;
+            transition: all 0.5s ease;
+          }
     }
+   
 }
+        

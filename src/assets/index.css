@@ -491,73 +491,54 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 20px 30px;
 }
-.contact .form {
-  padding: 30px;
+.contact .contact-container iframe {
+  border-radius: 8px;
 }
-.contact .form .form-list .form-control {
+.contact .contact-container form {
+  margin-left: 20px;
+}
+.contact .contact-container form h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #F5F5F5;
+  margin: 10px 0;
+}
+.contact .contact-container form .form-list .input_field {
   margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
 }
-.contact .form .form-list .form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
+.contact .contact-container form .form-list .input_field input[type=text] {
+  padding: 10px 20px;
+  min-width: 400px;
 }
-.contact .form .form-list .form-control input {
-  border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 10px;
-  width: 400px;
-}
-.contact .form .form-list .form-control input:focus {
-  outline: 0;
-  border-color: #777;
-}
-.contact .form .form-list .form-control i {
-  visibility: hidden;
-  position: absolute;
-  top: 40px;
-  right: 10px;
-}
-.contact .form .form-list .form-control small {
-  color: #e74c3c;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
-.contact .form .form-list button {
-  background-color: #8e44ad;
-  border: 2px solid #8e44ad;
-  border-radius: 4px;
-  color: #fff;
-  display: block;
-  font-family: inherit;
-  font-size: 16px;
-  padding: 10px;
-  margin-top: 20px;
+.contact .contact-container form .form-list .input_field textarea {
+  resize: none;
+  height: 150px;
+  border: 1px solid #e0e0e0;
   width: 100%;
+  padding: 10px 20px;
 }
-.contact .form .form-control.success input {
-  border-color: #2ecc71;
+.contact .contact-container form .form-list .btn input[type=submit] {
+  border: 0px;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.contact .form .form-control.error input {
-  border-color: #e74c3c;
-}
-.contact .form .form-control.success i.fa-check-circle {
-  color: #2ecc71;
-  visibility: visible;
-}
-.contact .form .form-control.error i.fa-exclamation-circle {
-  color: #e74c3c;
-  visibility: visible;
-}
-.contact .form .form-control.error small {
-  visibility: visible;
+.contact .contact-container #error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
 }
 
 /* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
@@ -711,8 +692,14 @@ body {
   }
   .contact .contact-container {
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    flex-direction: column-reverse;
+    padding: 20px 10px !important;
+  }
+  .contact .contact-container .map {
+    padding: 20px;
+  }
+  .contact .contact-container form {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 440px) {
@@ -748,8 +735,5 @@ body {
     width: 100%;
     height: 25vmin;
     font-size: 8px;
-  }
-  .contact .contact-container {
-    padding: 0 10px !important;
   }
 }/*# sourceMappingURL=index.css.map */
