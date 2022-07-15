@@ -34,7 +34,7 @@
                     position: relative;
                     
                     .card-item{
-                        padding: 25px;
+                        padding: 25px 15px;
                         .fa-quote{
                             position: absolute;
                             top: 0%;
@@ -56,10 +56,7 @@
                         .image-content{
                             display: flex;
                             flex-direction: column;
-                            // justify-content: center;
-                            // align-items: center;
-                            // align-items: center;
-                             // padding: 10px 14px;
+    
                             position: relative;
                             row-gap: 5px;
                             // padding: 20px 0;
@@ -71,6 +68,7 @@
                             .image-title{
                                 display: flex;
                                 // padding: 0 20px;
+                               
                                 
                                 img{
                                     width: 15%;
@@ -90,6 +88,10 @@
                                         color: $--color-black;
                                         font-size: 13px;
                                     }
+                                }
+                                .card-star{
+                                    color: #4070F4;
+                                    font-size: 12px;
                                 }
                                 
                             }

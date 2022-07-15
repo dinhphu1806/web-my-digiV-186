@@ -171,18 +171,36 @@
             display: none;
           }
       }
-    
       .customer{
             .customer-container{
                 .slide-container{
+                    .cart-wrapper{
+                        .cart{
+                            .cart-item{
+                                padding: 25px 10px;
+                                .image-content{
+                                    .image-title{
+                                        .card-name{
+                                            h2{
+                                                font-size: 16px;
+                                                
+                                            }
+                                            h3{
+                                                color: $--color-black;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
                     .swiper-pagination{
                         display: none;
                     }
                 }
             }
-      }
-
-    
+        }
+    }
 }
 @media (max-width: 440px){
     .banner{
@@ -232,4 +250,4 @@
     
 }
    
-    
+
