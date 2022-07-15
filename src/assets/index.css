@@ -543,6 +543,13 @@ body {
   .about .about-container .about-content .about-author .author-content {
     padding: 8px 10px !important;
   }
+  .about .about-container .about-content .about-author .author-box {
+    width: 20px;
+  }
+  .accordion .accordion-list .accordion-content .accordion-item button strong {
+    font-size: 13px;
+    text-align: left;
+  }
   .accordion-list {
     max-width: 100%;
     padding: 0 !important;
