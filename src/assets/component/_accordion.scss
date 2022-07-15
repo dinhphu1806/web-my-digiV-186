@@ -16,21 +16,30 @@
         }
         .accordion-content{
             .accordion-item{
+                 margin-bottom: 10px;
+                 button{
+                    strong{
+                        font-size: 16px;
+                    }
+                 }
                 .accordion-header {
                     display: flex;
                     justify-content: space-between;
                     padding: 1rem 1rem;
                     width: 100%;
+                    background-color: $--color-white;
                     // background: #1f8dd6;
-                    background-color: transparent;
+                    // background-color: transparent;
                     border: none;
                     outline: none;
                     // border-bottom: 1px solid #54a0ff;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.484);
-                    color: #f3f3f3;
+                    // border-bottom: 1px solid rgba(255, 255, 255, 0.484);
+                    // color: #f3f3f3;
+                    color: $--color-black;
                     cursor: pointer;
                     &.active{
                         background-color: #1070b1;
+                        color: $--color-white;
                         i{
                             transform: rotate(180deg);
                             transition: all 0.3s ease-in-out;

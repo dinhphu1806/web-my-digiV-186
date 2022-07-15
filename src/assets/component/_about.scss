@@ -1,8 +1,8 @@
 .about{
     .about-container{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         padding: 50px;
         .about-banner{
             img{
@@ -14,34 +14,115 @@
         }
         .about-content{
             max-width: 500px;
-        
-            h3{
-                font-weight: 600;
-                font-size: 22px;
-                letter-spacing: 1;
-                color: $--color-white-header;
-            }
-            h1{
-                font-size: 36px;
-                letter-spacing: 1.5;
-                color: $--color-white;
-                font-family: 'Open Sans', sans-serif;
-            }
-           .about-text{
-                margin: 20px 0;
-              
-                p{
-                    margin-bottom: 10px;
-                    letter-spacing: 1.2px;
-                    color: $--color-p;
+            .about-content-container{      
+                h3{
+                    font-weight: 600;
+                    font-size: 22px;
+                    letter-spacing: 1;
+                    color: $--color-white-header;
                 }
+                h1{
+                    font-size: 36px;
+                    letter-spacing: 1.5;
+                    color: $--color-white;
+                    font-family: 'Open Sans', sans-serif;
+                }
+               .about-text{
+                    margin: 20px 0;
+                  
+                    p{
+                        margin-bottom: 10px;
+                        letter-spacing: 1.2px;
+                        color: $--color-p;
+                    }
+               }
+               .about-author{
+                    margin-bottom: 30px;
+                    display: flex;
+                    background-color: rgba(255, 255, 255, 0.966);
+                    // border-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    box-shadow: rgba(15, 88, 88, 0.2) 0px 20px 50px;
+                    .author-box{
+                        width: 15px;
+                        min-height: 162px;
+                        background-color: #4070F4;
+                       
+                    }
+                    .author-content{
+                        padding: 20px;
+                       
+                        .auhtor-list{
+                            .author-item{
+                                display: flex;
+                                flex-direction: column;
+                                .author-title{
+                                    display: flex;
+                                     // justify-content: center;
+                                    align-items: center;
+                                    img{
+                                        width: 10%;
+                                        height: 10%;
+                                        object-fit: cover;
+                                        border-radius: 50%;
+                                        margin-right: 20px;
+                                    }
+                                    .author-name-text{
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                }
+                                .author-text{
+                                    margin-top: 14px;
+                                    font-style: italic;
+                                    color: gray;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+                a{
+                    padding: 10px 25px;
+                    background-color: $--bg-btn;
+                    color: $--color-white;
+               }
            }
-           a{
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: $--bg-btn;
-            color: $--color-white;
-           }
+        //    .author-content{
+        //         .auhtor-list{
+        //             display: flex;
+        //             .author-box{
+        //                 width: 2px;
+        //                 height: 50px;
+        //                 background-color: #fff; 
+        //             }
+        //             .author-item{
+        //                 display: flex;
+        //                 flex-direction: column;
+        //                 .author-title{
+        //                     display: flex;
+        //                     flex-direction: column;
+        //                     img{
+        //                         // width: 25%;
+        //                         height: 10%;
+        //                         object-fit: cover;
+        //                         border-radius: 50%;
+        //                     }
+        //                     .author-name{
+        //                         display: flex;
+        //                         .author-name-text{
+        //                             display: flex;
+        //                             flex-direction: column;
+        //                         }
+        //                     }
+                            
+        //                 }
+        //             }
+        //         }
+               
+        //    }
+          
         }
     }
 }

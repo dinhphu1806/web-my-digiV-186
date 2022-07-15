@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
+    <!-- link swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
    
 </head>
 <body>
@@ -48,7 +50,7 @@
     <section class="banner"> 
         <div class="banner-container">           
                 <div class="banner-text">
-                    <h3>Đây là banner</h3>
+                    <h3>Make Your Business</h3>
                     <h1>The complete solution of the business</h1>
                     <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing</p>
                     <a href="#" id="btn">Get Now</a>
@@ -65,13 +67,35 @@
                 <img src="./src/assets/image/banner-about.svg" alt="">
             </div>
             <div class="about-content">
-                <h3>About US</h3>
-                <h1>Unbrew A Digital Agency Company</h1>
-                <div class="about-text">
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <div class="about-content-container">
+                    <h3>About US</h3>
+                    <h1>Unbrew A Digital Agency Company</h1>
+                    <div class="about-text">
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    </div>
+                    <div class="about-author">
+                        <div class="author-box"></div>
+                        <div class="author-content">
+                            <div class="auhtor-list">
+                                <div class="author-item">  
+                                    <div class="author-title">
+                                        <img src="./src/assets/image/about-avatar.webp" alt="">
+                                        <div class="author-name-text">
+                                            <span style="font-size: 18px; font-weight: bold">Grey Simpson</span>
+                                            <span style="font-size: 14px;">Co-Founder, XYZ Inc.</span>
+                                        </div>
+                                    </div>
+                                    <blockquote class="author-text">
+                                        “Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Ducimus vitae ipsa asperiores inventore aperiam iure?
+                                    </blockquote>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="#">More About us</a>               
                 </div>
-                <a href="#">More About us</a>
             </div>
         </div>
     </section>
@@ -158,7 +182,7 @@
             <div class="accordion-content">
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <strong>Accordion 1</strong> <i class="fas fa-angle-down"></i>
+                        <strong>Design your FAQ page.</strong> <i class="fas fa-angle-down"></i>
                     </button>
                     <div class="accordion-body">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque,
@@ -171,7 +195,7 @@
           
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <strong>Accordion 2</strong><i class="fas fa-angle-down"></i>
+                        <strong>Decide how you'll organize the FAQ page.</strong><i class="fas fa-angle-down"></i>
                     </button>
                     <div class="accordion-body">
                         Dignissimos perspiciatis amet, qui soluta aliquid, ipsa ea alias
@@ -182,7 +206,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <strong>Accordion 3</strong><i class="fas fa-angle-down"></i>
+                        <strong>Include space for live support options.</strong><i class="fas fa-angle-down"></i>
                     </button>
                     <div class="accordion-body">
                         Amet fuga ipsum velit, quae illo doloremque? Id quidem harum placeat
@@ -192,7 +216,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-header">
-                        <strong>Accordion 4</strong><i class="fas fa-angle-down"></i>
+                        <strong>Publish the FAQ page on your site.</strong><i class="fas fa-angle-down"></i>
                     </button>
                     <div class="accordion-body">
                         Nihil consectetur ipsum nobis eligendi facilis sed corrupti, ab fugit
@@ -204,6 +228,240 @@
             </div>
           </div>
     </section>
+
+    <section class="customer">
+        <div class="customer-container">
+            <h3>Testimonials</h3>
+            <h1>Happy Customers</h1>
+            <h4>Far far away, behind the word mountains, 
+                far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</h4>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <!-- slide 1 -->
+                        <div class="card swiper-slide">
+                           <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                           </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="card swiper-slide">
+                            <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                           </div>
+                        </div>
+
+                        <!-- slide 3 -->
+                        <div class="card swiper-slide">
+                            <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                           </div>
+                        </div>
+
+                        <!-- slide 4 -->
+                       <div class="card swiper-slide">
+                            <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 5 -->
+                        <div class="card swiper-slide">
+                            <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                           </div>
+                        </div>
+
+                        <!-- slide 6 -->
+                        <div class="card swiper-slide">
+                            <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                           </div>
+                        </div>
+
+                        <!-- slide 7 -->
+                        <div class="card swiper-slide">
+                            <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                           </div>
+                        </div>
+
+                        <!-- slide 8 -->
+                       <div class="card swiper-slide">
+                        <div class="card-item">
+                            <div class="fa-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="image-content">
+                                <!-- <span class="overlay"></span> -->
+                                <div class="image-title"> 
+                                    <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                    <div class="card-name">
+                                        <h2>David Dell</h2>
+                                        <h3>Marketing Manager</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <button class="button">View More</button>
+                            </div>
+                       </div>
+                        </div>
+
+                        <!-- slide 9 -->
+                        <div class="card swiper-slide">
+                            <div class="card-item">
+                                <div class="fa-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <div class="image-content">
+                                    <!-- <span class="overlay"></span> -->
+                                    <div class="image-title"> 
+                                        <img src="./src/assets/image/about-avatar.webp" alt="" class="card-img">        
+                                        <div class="card-name">
+                                            <h2>David Dell</h2>
+                                            <h3>Marketing Manager</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="button">View More</button>
+                                </div>
+                           </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
         <!-- section blogs starts -->
     <section class="blog">
         <!-- <div class="blog-title">
@@ -214,6 +472,7 @@
                 <img src="./src/assets/image/banner11.png" alt="">
         </div> -->
     </section>
+
       <!-- section blogs ends -->
     
     <!-- section contact starts -->
@@ -222,11 +481,13 @@
     </section>
       <!-- section contact ends -->
 
-   
+      <!-- src swiper -->
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <!-- src js -->
    
     <script src="./src/assets/js/Bar.js"></script>
     <script src="./src/assets/js/counterUp.js"></script>
     <script src="./src/assets/js/accordion.js"></script>
+    <script src="./src/assets/js/swiperslide.js"></script>
 </body>
 </html>

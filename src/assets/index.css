@@ -112,8 +112,6 @@ body {
 
 .about .about-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 50px;
 }
 .about .about-container .about-banner img {
@@ -126,29 +124,70 @@ body {
 .about .about-container .about-content {
   max-width: 500px;
 }
-.about .about-container .about-content h3 {
+.about .about-container .about-content .about-content-container h3 {
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 1;
   color: rgba(255, 255, 255, 0.785);
 }
-.about .about-container .about-content h1 {
+.about .about-container .about-content .about-content-container h1 {
   font-size: 36px;
   letter-spacing: 1.5;
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
-.about .about-container .about-content .about-text {
+.about .about-container .about-content .about-content-container .about-text {
   margin: 20px 0;
 }
-.about .about-container .about-content .about-text p {
+.about .about-container .about-content .about-content-container .about-text p {
   margin-bottom: 10px;
   letter-spacing: 1.2px;
   color: #F5F5F5;
 }
-.about .about-container .about-content a {
-  margin-top: 20px;
-  padding: 10px 20px;
+.about .about-container .about-content .about-content-container .about-author {
+  margin-bottom: 30px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.966);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(15, 88, 88, 0.2) 0px 20px 50px;
+}
+.about .about-container .about-content .about-content-container .about-author .author-box {
+  width: 15px;
+  min-height: 162px;
+  background-color: #4070F4;
+}
+.about .about-container .about-content .about-content-container .about-author .author-content {
+  padding: 20px;
+}
+.about .about-container .about-content .about-content-container .about-author .author-content .auhtor-list .author-item {
+  display: flex;
+  flex-direction: column;
+}
+.about .about-container .about-content .about-content-container .about-author .author-content .auhtor-list .author-item .author-title {
+  display: flex;
+  align-items: center;
+}
+.about .about-container .about-content .about-content-container .about-author .author-content .auhtor-list .author-item .author-title img {
+  width: 10%;
+  height: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.about .about-container .about-content .about-content-container .about-author .author-content .auhtor-list .author-item .author-title .author-name-text {
+  display: flex;
+  flex-direction: column;
+}
+.about .about-container .about-content .about-content-container .about-author .author-content .auhtor-list .author-item .author-text {
+  margin-top: 14px;
+  font-style: italic;
+  color: gray;
+  letter-spacing: 1px;
+}
+.about .about-container .about-content .about-content-container a {
+  padding: 10px 25px;
   background-color: #1fb6fc;
   color: #fff;
 }
@@ -169,13 +208,13 @@ body {
 .services .services-container .services-list .item {
   text-align: center;
   padding: 30px;
-  transform: scale(1);
+  transform: translateY(0);
 }
 .services .services-container .services-list .item:hover {
-  transition: all 0.3s ease;
-  transform: scale(1.1);
+  transition: all 0.5s ease;
   box-shadow: rgba(85, 93, 100, 0.2) 0px 8px 24px;
   border-radius: 20px;
+  transform: translateY(-20px);
 }
 .services .services-container .services-list .item a {
   text-align: center;
@@ -215,20 +254,26 @@ body {
   text-align: center;
   color: #fff;
 }
+.accordion .accordion-list .accordion-content .accordion-item {
+  margin-bottom: 10px;
+}
+.accordion .accordion-list .accordion-content .accordion-item button strong {
+  font-size: 16px;
+}
 .accordion .accordion-list .accordion-content .accordion-item .accordion-header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1rem;
   width: 100%;
-  background-color: transparent;
+  background-color: #fff;
   border: none;
   outline: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.484);
-  color: #f3f3f3;
+  color: #000;
   cursor: pointer;
 }
 .accordion .accordion-list .accordion-content .accordion-item .accordion-header.active {
   background-color: #1070b1;
+  color: #fff;
 }
 .accordion .accordion-list .accordion-content .accordion-item .accordion-header.active i {
   transform: rotate(180deg);
@@ -244,6 +289,154 @@ body {
 .accordion .accordion-list .accordion-content .accordion-item .accordion-body.active {
   max-height: 10rem;
   padding: 1rem;
+}
+
+.customer {
+  overflow: hidden;
+}
+.customer .customer-container {
+  margin-top: 30px;
+}
+.customer .customer-container h3 {
+  text-align: center;
+  color: #fff;
+}
+.customer .customer-container h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+.customer .customer-container h4 {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.701);
+  text-align: center;
+}
+.customer .customer-container .slide-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 40px 0;
+}
+.customer .customer-container .slide-container .slide-content {
+  margin: 0 40px;
+  border-radius: 25px;
+}
+.customer .customer-container .slide-container .slide-content .card {
+  border-radius: 25px;
+  background-color: #FFF;
+  position: relative;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item {
+  padding: 25px;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .fa-quote {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  background-color: #1fb6fc;
+  border-radius: 50%;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .fa-quote .fa-quote-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .image-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  row-gap: 5px;
+  background-color: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .image-content .image-title {
+  display: flex;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .image-content .image-title img {
+  width: 15%;
+  height: 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .image-content .image-title .card-name {
+  display: flex;
+  flex-direction: column;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .image-content .image-title .card-name h2 {
+  font-size: 18px;
+  color: #000;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .image-content .image-title .card-name h3 {
+  color: #000;
+  font-size: 13px;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 0 0;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .card-content .content {
+  border-top-right-radius: 25px;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .card-content .description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .card-content .button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.customer .customer-container .slide-container .slide-content .card .card-item .card-content .button:hover {
+  background: #265DF2;
+}
+.customer .customer-container .slide-container .swiper-navBtn {
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.customer .customer-container .slide-container .swiper-navBtn:hover {
+  color: #4070F4;
+}
+.customer .customer-container .slide-container .swiper-navBtn::before, .customer .customer-container .slide-container .swiper-navBtn::after {
+  font-size: 35px;
+}
+.customer .customer-container .slide-container .swiper-button-next {
+  right: 0;
+  width: calc(var(18px) / 26 * 20);
+  height: 18px;
+  display: none;
+}
+.customer .customer-container .slide-container .swiper-button-prev {
+  left: 0;
+  width: calc(var(18px) / 26 * 20);
+  height: 18px;
+  display: none;
+}
+.customer .customer-container .slide-container .swiper-pagination-bullet {
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.customer .customer-container .slide-container .swiper-pagination-bullet-active {
+  background-color: #4070F4;
 }
 
 /* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
@@ -347,6 +540,9 @@ body {
   .about .about-container .about-content .about-text p {
     font-size: 14px;
   }
+  .about .about-container .about-content .about-author .author-content {
+    padding: 8px 10px !important;
+  }
   .accordion-list {
     max-width: 100%;
     padding: 0 !important;
@@ -359,6 +555,12 @@ body {
   }
   .services .services-container .services-list .item {
     padding: 20px;
+  }
+  .slide-content {
+    margin: 0 10px;
+  }
+  .slide-content .swiper-navBtn {
+    display: none;
   }
 }
 @media (max-width: 440px) {

@@ -115,6 +115,11 @@
                         font-size: 14px;
                     }
                 }
+                .about-author{
+                    .author-content{
+                        padding: 8px 10px !important;
+                    }
+                }
             }
         }
     
@@ -135,6 +140,13 @@
             }
         }
     }
+    .slide-content{
+        margin: 0 10px;
+        .swiper-navBtn{
+            display: none;
+          }
+      }
+     
 
     
 }

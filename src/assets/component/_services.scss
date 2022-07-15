@@ -18,13 +18,14 @@
                 text-align: center;
                 padding: 30px;
                 // border: 1px solid #333;
-                
-                transform: scale(1);
+                // transform: scale(1);
+                transform: translateY(0);
                 &:hover{
-                    transition: all 0.3s ease;
-                    transform: scale(1.1);
+                    transition: all 0.5s ease;
+                    // transform: scale(1.1);
                     box-shadow: rgba(85, 93, 100, 0.2) 0px 8px 24px;
                     border-radius: 20px;
+                    transform: translateY(-20px);
                 }   
                 a{
                     text-align: center;
