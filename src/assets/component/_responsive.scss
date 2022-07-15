@@ -116,12 +116,21 @@
                     }
                 }
                 .about-author{
+                    .author-box{
+                        width: 30px;
+                    }
                     .author-content{
                         padding: 8px 10px !important;
+                        .auhtor-list{
+                            .author-item{
+                                padding: 5px 0;
+                                .author-text{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
                     }
-                    .author-box{
-                        width: 20px;
-                    }
+                    
                 }
             }
         }
@@ -162,7 +171,16 @@
             display: none;
           }
       }
-     
+    
+      .customer{
+            .customer-container{
+                .slide-container{
+                    .swiper-pagination{
+                        display: none;
+                    }
+                }
+            }
+      }
 
     
 }

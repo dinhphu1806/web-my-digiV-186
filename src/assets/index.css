@@ -185,6 +185,7 @@ body {
   font-style: italic;
   color: gray;
   letter-spacing: 1px;
+  font-size: 14px;
 }
 .about .about-container .about-content .about-content-container a {
   padding: 10px 25px;
@@ -540,11 +541,17 @@ body {
   .about .about-container .about-content .about-text p {
     font-size: 14px;
   }
+  .about .about-container .about-content .about-author .author-box {
+    width: 30px;
+  }
   .about .about-container .about-content .about-author .author-content {
     padding: 8px 10px !important;
   }
-  .about .about-container .about-content .about-author .author-box {
-    width: 20px;
+  .about .about-container .about-content .about-author .author-content .auhtor-list .author-item {
+    padding: 5px 0;
+  }
+  .about .about-container .about-content .about-author .author-content .auhtor-list .author-item .author-text {
+    font-size: 13px;
   }
   .accordion .accordion-list .accordion-content .accordion-item button strong {
     font-size: 13px;
@@ -567,6 +574,9 @@ body {
     margin: 0 10px;
   }
   .slide-content .swiper-navBtn {
+    display: none;
+  }
+  .customer .customer-container .slide-container .swiper-pagination {
     display: none;
   }
 }
