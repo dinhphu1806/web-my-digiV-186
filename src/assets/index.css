@@ -19,8 +19,7 @@ a {
 }
 
 body {
-  background: #00c6ff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgb(44, 87, 196);
 }
 
 .header {
@@ -444,6 +443,123 @@ body {
   background-color: #4070F4;
 }
 
+.counter-number {
+  position: relative;
+}
+.counter-number .counter-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.counter-number .counter-wrapper .container {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 10px solid #18f98f;
+  box-shadow: rgba(60, 63, 66, 0.2) 0px 8px 24px;
+}
+.counter-number .counter-wrapper .container:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s linear;
+}
+.counter-number .counter-wrapper .container i {
+  color: #18f98f;
+  font-size: 2.5em;
+  text-align: center;
+  filter: contrast(100%);
+}
+.counter-number .counter-wrapper .container span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+.counter-number .counter-wrapper .container span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+
+.contact .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.contact .form {
+  padding: 30px;
+}
+.contact .form .form-list .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.contact .form .form-list .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.contact .form .form-list .form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 400px;
+}
+.contact .form .form-list .form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.contact .form .form-list .form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+.contact .form .form-list .form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.contact .form .form-list button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.contact .form .form-control.success input {
+  border-color: #2ecc71;
+}
+.contact .form .form-control.error input {
+  border-color: #e74c3c;
+}
+.contact .form .form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.contact .form .form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.contact .form .form-control.error small {
+  visibility: visible;
+}
+
 /* xong sang bên kia có nút button sẽ bỏ vào or vào index.scss như sau
     vd: 
     button{
@@ -593,6 +709,11 @@ body {
   .customer .customer-container .slide-container .cart-wrapper .swiper-pagination {
     display: none;
   }
+  .contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
 }
 @media (max-width: 440px) {
   .banner .banner-container .banner-text {
@@ -622,5 +743,13 @@ body {
   }
   .about .about-container .about-text p {
     font-size: 12px;
+  }
+  .counter-wrapper .container {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+  .contact .contact-container {
+    padding: 0 10px !important;
   }
 }/*# sourceMappingURL=index.css.map */
