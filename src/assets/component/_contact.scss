@@ -1,15 +1,22 @@
 .contact{
     .contact-container{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         overflow: hidden;
-        padding: 20px 30px;
+        padding: 40px;
         iframe{
-            border-radius: 8px;
+            flex:1 1 45rem;
+            width: 100%;
+            object-fit: cover;
+            height: 30rem;
+               // padding: 2rem;
         }
         form{
-            margin-left: 20px;
+            // margin-left: 20px;
+            flex:1 1 45rem;
+            padding: 5rem;
+            // text-align: center;
             h1{
                 text-align: center;
                 font-size: 36px;
@@ -21,29 +28,32 @@
                     margin-bottom: 10px;
                     input[type="text"]{
                         padding: 10px 20px;
-                        width: 400px;
+                        width: 100%;
                      }
                     textarea{
-                        resize: none;
+                        resize: vertical;
+                        width: 100%;
+                        min-height: 80px;
+                        height: 100px;
+                        max-height: 200px;
+                        overscroll-behavior: contain;
                         height: 150px;
                         border: 1px solid #e0e0e0;
-                        width: 100%;
                         padding: 10px 20px;
                       }
                 }
                 .btn{
                     input[type="submit"]{
                         border: 0px;
-                        margin-top: 10px;
-                        padding: 10px;
-                        text-align: center;
+                        // margin-top: 10px;
+                        padding: 10px 0;
+                        // text-align: left;
                         width: 100%;
-                        // background: #fece0c;
                         color: #332902;
                         text-transform: uppercase;
-                        letter-spacing: 5px;
+                        letter-spacing: 2px;
                         font-weight: bold;
-                        border-radius: 10px;
+                        // border-radius: 10px;
                         cursor: pointer;
                       }
                 }

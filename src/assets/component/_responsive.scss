@@ -21,10 +21,21 @@
               }
         }
     }
-   
+    
+    .contact{
+        .contact-container{
+            padding: 20px;
+            // iframe{
+            //     height: 10rem;
+            // }
+            form{
+                padding: 2rem;
+            }
+        }
+    }
       
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .header{
         padding: 10px 40px;
         .logo{
@@ -65,9 +76,9 @@
                     }
                 }
             }   
-            .fa-times{
-                color: #fff !important;
-            }  
+            // .fa-times{
+            //     color: #fff !important;
+            // }  
         }
     }
     .navbar.active .menu{
@@ -228,28 +239,30 @@
         .contact-container{
             display: flex;
             flex-direction: column-reverse;
-            padding: 20px 10px !important;
-            .map{
-                padding: 20px;
+            padding: 10px;
+            iframe{
+                margin-top: -100px;
+                padding: 0 20px;
+                // height: 5rem;
             }
             form{
-                 margin-bottom: 30px;
-                 .form-list{
+                padding: 0 !important;
+                //  margin-bottom: 30px;
+                .form-list{
                     .input_field{
                         input[type="text"]{
-                            width: 300px;
+                            min-width: 400px;
                          }
-                        textarea{
-                            resize: none;
-                            height: 150px;
-                            border: 1px solid #e0e0e0;
-                            width: 100%;
-                            padding: 10px 20px;
-                          }
+                        // textarea{
+                        //     resize: none;
+                        //     height: 150px;
+                        //     border: 1px solid #e0e0e0;
+                        //     width: 100%;
+                        //     padding: 10px 20px;
+                        //   }
                     }
+                }
             }
-               
-            
         }
     }
 }
@@ -306,27 +319,32 @@
     }
     .contact{
         .contact-container{
-            padding: 20px 50px !important;
+            
+            padding: 10px;
             iframe{
-                // padding: 0 100px !important;
+             
+                padding: 0 20px;
+                
             }
             form{
-                 margin-bottom: 30px;
-                 .form-list{
+                padding: 0 !important;
+                //  margin-bottom: 30px;
+                .form-list{
                     .input_field{
                         input[type="text"]{
-                            width: 300px;
-                        }
-                        textarea{
-                            resize: none;
-                            height: 150px;
-                            border: 1px solid #e0e0e0;
-                            width: 100%;
-                            padding: 10px 20px;
-                        }
+                            min-width: 300px;
+                         }
+                        // textarea{
+                        //     resize: none;
+                        //     height: 150px;
+                        //     border: 1px solid #e0e0e0;
+                        //     width: 100%;
+                        //     padding: 10px 20px;
+                        //   }
                     }
-                 } 
-             }
-         }
+                }
+            }
+        }
     }
-} 
+}
+

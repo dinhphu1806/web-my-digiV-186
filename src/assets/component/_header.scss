@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 90px;
-    box-shadow: rgba(85, 89, 91, 0.2) 0px 8px 24px;
+    // box-shadow: rgba(85, 89, 91, 0.2) 0px 8px 24px;
     .logo{
         a{
             img{
@@ -18,9 +18,8 @@
         .menu{
             display: flex;
             li{
-                padding: 7px 15px;
+                margin-right: 20px;
                 position: relative;
-                
                 a{
                     color: $--color-white;
                     font-size: 16px;
@@ -29,19 +28,29 @@
                     font-size: 18px;
                     &:hover{
                         color: blue;
+                        &::before,&::after{
+                            width: 50%;
+                        }
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 0px;
+                        left: 50%;
+                        width: 0%;
+                        height: 2px;
+                        background-color: $--color-white;
+                        transition: all 0.3s ease-in;
                     }
                     &::after{
                         content: '';
                         position: absolute;
                         bottom: 0px;
-                        left: 0;
-                        background-color: $--color-black;
+                        right: 50%;
                         width: 0%;
                         height: 2px;
-                    }
-                    &:hover::after{
-                       width: 100%;
-                       transition: all 0.3s linear;
+                        background-color: $--color-white;
+                        transition: all 0.3s ease-in;
                     }
                 }  
             }
@@ -49,7 +58,7 @@
     }
     .icon-bar{
         font-size: 22px;
-        color: $--color-black;
+        color: $--color-white;
         display: none;
     }
           
