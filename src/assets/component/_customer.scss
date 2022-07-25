@@ -28,103 +28,103 @@
                 margin: 0 40px;
                 // overflow: hidden;
                 border-radius: 25px;
-                .card{
-                    border-radius: 25px;
-                    background-color: #FFF;
-                    position: relative;
-                    
-                    .card-item{
-                        padding: 25px 15px;
-                        .fa-quote{
-                            position: absolute;
-                            top: 0%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            z-index: 999;
-                            width: 50px;
-                            height: 50px;
-                            background-color: #1fb6fc;
-                            border-radius: 50%;
-                            .fa-quote-left{
+                .card-wrapper{
+                    .card{
+                        border-radius: 25px;
+                        background-color: #FFF;
+                        position: relative;
+                        .card-item{
+                            padding: 25px 15px;
+                            .fa-quote{
                                 position: absolute;
-                                top: 50%;
+                                top: 0%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
-                                color: #fff;
+                                z-index: 999;
+                                width: 50px;
+                                height: 50px;
+                                background-color: #1fb6fc;
+                                border-radius: 50%;
+                                .fa-quote-left{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    color: #fff;
+                                }
                             }
-                        }
-                        .image-content{
-                            display: flex;
-                            flex-direction: column;
-                            position: relative;
-                            row-gap: 5px;
-                            // padding: 20px 0;
-                            // background-color: #4070F4;
-                            background-color: #fff;
-                            border-top-left-radius: 25px;
-                            border-top-right-radius: 25px;
-                            // border-bottom-left-radius: 25px;
-                            .image-title{
+                            .image-content{
                                 display: flex;
-                                // padding: 0 20px;
-                                img{
-                                    width: 15%;
-                                    height: 15%;
-                                    object-fit: cover;
-                                    border-radius: 50%;
-                                    margin-right: 10px;
-                                }
-                                .card-name{
-                                    display: flex;
-                                    flex-direction: column;
-                                    h2{
-                                        font-size: 18px;
-                                        color: $--color-black;
-                                    }
-                                    h3{
-                                        color: $--color-black;
-                                        font-size: 13px;
-                                    }
-                                }
-                                .card-star{
-                                    color: #4070F4;
-                                    font-size: 12px;
-                                }
-                                
-                            }
-                        }
-                        .card-content{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            padding: 10px 0 0 0;
-                            
-                            .content{
+                                flex-direction: column;
+                                position: relative;
+                                row-gap: 5px;
+                                // padding: 20px 0;
+                                // background-color: #4070F4;
+                                background-color: #fff;
+                                border-top-left-radius: 25px;
                                 border-top-right-radius: 25px;
-                            }
-                            .description{
-                                font-size: 14px;
-                                color: #707070;
-                                text-align: center;
-                            }
-                            .button{
-                                border: none;
-                                font-size: 16px;
-                                color: #FFF;
-                                padding: 8px 16px;
-                                background-color: #4070F4;
-                                border-radius: 6px;
-                                margin-top: 10px;
-                                cursor: pointer;
-                                transition: all 0.3s ease;
-                                &:hover{
-                                    background: #265DF2;
+                                // border-bottom-left-radius: 25px;
+                                .image-title{
+                                    display: flex;
+                                    // padding: 0 20px;
+                                    img{
+                                        width: 15%;
+                                        height: 15%;
+                                        object-fit: cover;
+                                        border-radius: 50%;
+                                        margin-right: 10px;
+                                    }
+                                    .card-name{
+                                        display: flex;
+                                        flex-direction: column;
+                                        h2{
+                                            font-size: 18px;
+                                            color: $--color-black;
+                                        }
+                                        h3{
+                                            color: $--color-black;
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    .card-star{
+                                        color: #4070F4;
+                                        font-size: 12px;
+                                    }
+                                    
                                 }
                             }
-                        }
+                            .card-content{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding: 10px 0 0 0;
+                                
+                                .content{
+                                    border-top-right-radius: 25px;
+                                }
+                                .description{
+                                    font-size: 14px;
+                                    color: #707070;
+                                    text-align: center;
+                                }
+                                .button{
+                                    border: none;
+                                    font-size: 16px;
+                                    color: #FFF;
+                                    padding: 8px 16px;
+                                    background-color: #4070F4;
+                                    border-radius: 6px;
+                                    margin-top: 10px;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    &:hover{
+                                        background: #265DF2;
+                                    }
+                                }
+                            }
+                        }      
                     }
-                    
-                  }
+                }
             }
             .swiper-navBtn{
                 color: #6E93f7;
@@ -146,13 +146,13 @@
                 right: 10px;
                 // width: calc(var($--swiper-navigation-size)/ 22 * 10) !important;
                 // height: $--swiper-navigation-size;
-                // display: none ;
+                display: block;
               }
             .swiper-button-prev{
                 left: 10px;
                 // width: calc(var($--swiper-navigation-size)/ 22 * 10) !important;
                 // height: $--swiper-navigation-size;
-                // display: none ;
+                display: block;
             }
             .swiper-pagination-bullet{
                 background-color: #6E93f7;
