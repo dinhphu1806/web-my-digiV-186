@@ -25,9 +25,6 @@
     .contact{
         .contact-container{
             padding: 20px;
-            // iframe{
-            //     height: 10rem;
-            // }
             form{
                 padding: 2rem;
             }
@@ -265,9 +262,12 @@
             flex-direction: column-reverse;
             padding: 10px;
             iframe{
-                margin-top: -170px;
-                padding: 0 20px;
-                height: 10rem !important;
+                margin-top: -150px;
+                flex:1 1 45rem;
+                width: 100%;
+                object-fit: cover;
+                max-height: 30rem !important;
+                // padding: 20px;
             }
             form{
                 padding: 0 !important;
@@ -346,7 +346,9 @@
             
             padding: 10px;
             iframe{
-                padding: 0 30px;
+                margin-top: -170px;
+                max-height: 25rem !important;
+                // padding: 20px;
                 
             }
             form{

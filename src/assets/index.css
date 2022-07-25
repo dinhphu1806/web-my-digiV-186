@@ -36,7 +36,7 @@ body {
   display: flex;
 }
 .header .navbar .menu li {
-  margin-right: 20px;
+  margin-right: 30px;
   position: relative;
 }
 .header .navbar .menu li a {
@@ -45,9 +45,6 @@ body {
   display: block;
   font-weight: bold;
   font-size: 18px;
-}
-.header .navbar .menu li a:hover {
-  color: blue;
 }
 .header .navbar .menu li a:hover::before, .header .navbar .menu li a:hover::after {
   width: 50%;
@@ -513,7 +510,7 @@ body {
 .counter-number .counter-wrapper {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -555,7 +552,7 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  padding: 40px;
+  padding: 0px 40px;
 }
 .contact .contact-container iframe {
   flex: 1 1 45rem;
@@ -563,6 +560,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   height: 25rem;
+  padding: 20px;
 }
 .contact .contact-container form {
   flex: 1 1 45rem;
@@ -786,9 +784,12 @@ body {
     padding: 10px;
   }
   .contact .contact-container iframe {
-    margin-top: -170px;
-    padding: 0 20px;
-    height: 10rem !important;
+    margin-top: -150px;
+    flex: 1 1 45rem;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 30rem !important;
   }
   .contact .contact-container form {
     padding: 0 !important;
@@ -835,7 +836,8 @@ body {
     padding: 10px;
   }
   .contact .contact-container iframe {
-    padding: 0 30px;
+    margin-top: -170px;
+    max-height: 25rem !important;
   }
   .contact .contact-container form {
     padding: 0 !important;

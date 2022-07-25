@@ -1,7 +1,7 @@
  
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
-    spaceBetween: 25,
+    spaceBetween: 40,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
@@ -20,6 +20,7 @@ var swiper = new Swiper(".slide-content", {
     breakpoints:{
         0: {
             slidesPerView: 1,
+            spaceBetween: 30
         },
         520: {
             slidesPerView: 2,
