@@ -22,7 +22,7 @@
         .slide-container{
             max-width: 1000px;
             margin:  0 auto;
-            width: 100%;
+            // width: 100%;
             padding: 40px 0;
             .slide-content{
                 margin: 0 40px;
@@ -56,7 +56,6 @@
                         .image-content{
                             display: flex;
                             flex-direction: column;
-    
                             position: relative;
                             row-gap: 5px;
                             // padding: 20px 0;
@@ -68,8 +67,6 @@
                             .image-title{
                                 display: flex;
                                 // padding: 0 20px;
-                               
-                                
                                 img{
                                     width: 15%;
                                     height: 15%;
@@ -141,21 +138,26 @@
                     font-size: 35px;
                 }
             }
+            .swiper-button-next, .swiper-button-prev{
+                width: calc(var(--swiper-navigation-size)/ 44 * 14) !important;
+                height: calc(var(--swiper-navigation-size)/ 44 * 16 ) !important;
+            }
             .swiper-button-next{
-                right: 0;
-                width: calc(var($--swiper-navigation-size)/ 26 * 20);
-                height: $--swiper-navigation-size;
-                display: none ;
+                right: 10px;
+                // width: calc(var($--swiper-navigation-size)/ 22 * 10) !important;
+                // height: $--swiper-navigation-size;
+                // display: none ;
               }
             .swiper-button-prev{
-                left: 0;
-                width: calc(var($--swiper-navigation-size)/ 26 * 20);
-                height: $--swiper-navigation-size;
-                display: none ;
+                left: 10px;
+                // width: calc(var($--swiper-navigation-size)/ 22 * 10) !important;
+                // height: $--swiper-navigation-size;
+                // display: none ;
             }
             .swiper-pagination-bullet{
                 background-color: #6E93f7;
                 opacity: 1;
+                display: none;
             }
             .swiper-pagination-bullet-active{
                 background-color: #4070F4;

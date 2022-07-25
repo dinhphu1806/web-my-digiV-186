@@ -24,6 +24,14 @@
                     border-radius: 20px;
                     transform: translateY(-20px);
                 }   
+                .item-image{
+                    img{
+                        width: 15%;
+                        height: 100%;
+                        object-fit: cover;
+                        filter:brightness(200%);
+                    }
+                }
                 a{
                     text-align: center;
                     font-size: 22px;
@@ -41,16 +49,9 @@
                     font-size: 14px;
                     font-family: 'Open Sans', sans-serif;
                 }
-                .item-image{
-                    img{
-                        width: 15%;
-                        height: 100%;
-                        object-fit: cover;
-                        filter:brightness(200%);
-                    }
-                }
                 
-            }
+                          
         }
     }
+}
 }

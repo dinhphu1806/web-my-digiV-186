@@ -235,15 +235,31 @@
             }
         }
     }
+    .blog{
+        .blog-title{
+            h1{
+                font-size: 32px;
+            }
+            h3{
+                font-size: 12px;
+                padding: 10px 20px;
+            }
+        }
+        .blog-content{
+            .blog-container{
+                padding: 30px;
+            }
+        }
+    }
     .contact{
         .contact-container{
             display: flex;
             flex-direction: column-reverse;
             padding: 10px;
             iframe{
-                margin-top: -100px;
+                margin-top: -170px;
                 padding: 0 20px;
-                // height: 5rem;
+                height: 10rem !important;
             }
             form{
                 padding: 0 !important;
@@ -322,8 +338,7 @@
             
             padding: 10px;
             iframe{
-             
-                padding: 0 20px;
+                padding: 0 30px;
                 
             }
             form{
